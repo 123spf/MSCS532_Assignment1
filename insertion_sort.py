@@ -7,3 +7,8 @@ def insertion_sort_decreasing(arr):
         while j >= 0 and arr[j] < key:
             arr[j + 1] = arr[j]
             j = j - 1
+
+        # Place the key in its correct position
+        arr[j + 1] = key
+        
+    return arr    
